@@ -17,3 +17,22 @@ Unpack the link, e.g., to the desktop. This should start the vocabulary trainer.
 Vocabulary files can be created with google sheets.
 Here is an example:
 [https://docs.google.com/spreadsheets/d/14ymLVXnWKFUXAAgZ2oPCVh3M44IuE-K1/edit]
+
+You can create a copy of this document to your own google drive and edit it. Then, you need to share it 'publicly'; i.e., anyone with the link can view. This will allow the voktrain program to read the file. Now that your own document will have a new unique code after the /d/ and before the /edit/. The code of the current document is `14ymLVXnWKFUXAAgZ2oPCVh3M44IuE-K1`. In order to use your own vocabulary file, copy the new code. You will then need to edit the python program. To locate the python program, open Explorer and navigate to My Computer. Then, enter "linux" and press enter. Ubuntu 20.04 should appear.
+![image](https://github.com/juhench/voktrain/assets/49944492/6b87588a-3882-4d1c-aaa3-9eb7abc7a2b3)
+Navigate to >home>YOURUSERNAME>voktrain and open the file called "Vokabeltrainer..."
+![image](https://github.com/juhench/voktrain/assets/49944492/590d7ee2-b04a-48a3-82e1-85633d33ed30)
+You can use the Windows Editor program to edit the file. Locate the code that says:
+```python
+Schluesselliste=[['Englisch','14ymLVXnWKFUXAAgZ2oPCVh3M44IuE-K1',''],
+                 ['Latein','12dzw07OguBhtL_gqTHWlQ5sn5SS9LubN',''],
+                ]
+```
+Exchange the language and the code here. Make sure not to delete any brackets, quotation marks, etc. Save the file. Restart the vocabulary trainer.
+
+In order to delete old error file that collect the misspelled vocabulary, you can navigate to here:
+![image](https://github.com/juhench/voktrain/assets/49944492/9f48b0c1-e056-4fa8-8116-758adc8cffbb)
+
+You can also create vocabulary files with Excel or LibreOffice in XLSX format as an alternative to google drive.
+
+
