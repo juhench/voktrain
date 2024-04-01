@@ -11,5 +11,9 @@ sudo apt update; sudo apt -y upgrade; sudo apt -y install git build-essential; g
 ```
 Press newline. It can take a while until the Ubuntu subsystem has been updated and the required software packages have been installed. This will install Python, all required packages, and the voktrain software. At the end, a message should appear that the voktrain software was installed. You can now close the WSL window.
 
-In order to run the voktrain software, the easiest way is to add a shortcut to the desktop. Here is a shortcut as an example. https://github.com/juhench/voktrain/blob/2d48cbc753cd474b52b8dd80f1e84f7af4905435/Vokabeltrainer.lnk
+In order to run the voktrain software, the easiest way is to add a shortcut to the desktop. Here is a shortcut as an example. (https://github.com/juhench/voktrain/blob/b3fa370ee76fa89c0920e5cf785c3b1a8e648e5a/Vokabeltrainer.zip)
+Unpack the link, e.g., to the desktop. This should start the vocabulary trainer.
 
+Vocabulary files can be created with google sheets.
+Here is an example:
+[https://docs.google.com/spreadsheets/d/14ymLVXnWKFUXAAgZ2oPCVh3M44IuE-K1/edit]
