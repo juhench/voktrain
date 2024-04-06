@@ -11,8 +11,24 @@ sudo apt update; sudo apt -y upgrade; sudo apt -y install git build-essential; g
 ```
 Press newline. It can take a while until the Ubuntu subsystem has been updated and the required software packages have been installed. This will install Python, all required packages, and the voktrain software. At the end, a message should appear that the voktrain software was installed. You can now close the WSL window.
 
-In order to run the voktrain software, the easiest way is to add a shortcut to the desktop. Here is a shortcut as an example. (https://github.com/juhench/voktrain/blob/b3fa370ee76fa89c0920e5cf785c3b1a8e648e5a/Vokabeltrainer.zip)
+You can start the voktrain software from the Linux command line in the following way. In the Windows start menu, enter wsl to open a WSL terminal window. The enter the following command by copy&paste:
+```bash
+~/voktrain/starte_Vokabeltrainer_shell_wsl.sh
+```
+
+In order to run the voktrain software with a mouse click, the easiest way is to add a shortcut to the desktop. Here is a shortcut as an example. (https://github.com/juhench/voktrain/blob/b3fa370ee76fa89c0920e5cf785c3b1a8e648e5a/Vokabeltrainer.zip)
 Unpack the link, e.g., to the desktop. This should start the vocabulary trainer.
+
+If the zipped shortcut file does not work, you can create your own shortcut.
+Create a shortcut by a right-click on the desktop, then choose to create a new shortcut.
+![image](https://github.com/juhench/voktrain/assets/49944492/ae0b7aa0-70db-4b90-8bf8-667a68ea8967)
+A window should open, asking for the name of the new shortcut. Call it "wsl". Then press "weiter" or "next". A penguin icon should appear on the desktop. Right-click on the penguin, then select "Eigenschaften"/"Properties". It should look like this:
+![image](https://github.com/juhench/voktrain/assets/49944492/ccc6a473-560c-4d74-b6fb-d3f0a9e209c4)
+Unter "Ziel"/"Target", enter the launch command:
+```bash
+C:\Windows\System32\wsl.exe -e bash -lic "while true; do ~/voktrain/starte_Vokabeltrainer_shell_wsl.sh; done"
+```
+Confirm the change and then double-click the icon. The shortcut can now also be renamed from WSL to, e.g., Vokabeltrainer.
 
 Vocabulary files can be created with google sheets.
 Here is an example:
